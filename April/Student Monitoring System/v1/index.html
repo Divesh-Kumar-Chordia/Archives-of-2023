@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Monitoring System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+      <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="login-section">
+      <h1>Student Login</h1>
+      <form>
+          <label for="student-id">Enter Your Student ID:</label>
+        <input type="text" id="student-id" name="student-id" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+    
+    <section class="student-details">
+      <h2>Welcome, <span id="student-name"></span>!</h2>
+      <div class="sem-selector">
+        <label for="sem">Select Semester:</label>
+        <select id="sem">
+          <option value="1">Semester 1</option>
+          <option value="2">Semester 2</option>
+          <option value="3">Semester 3</option>
+          <option value="4">Semester 4</option>
+        </select>
+      </div>
+      <div class="marks-carousel">
+        <h3>Marks</h3>
+        <div class="carousel-container"></div>
+      </div>
+      <div class="attendance-carousel">
+        <h3>Attendance</h3>
+        <div class="carousel-container"></div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; Student Monitoring System</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

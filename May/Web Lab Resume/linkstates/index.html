@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Page Design</title>
+        <style>
+            /* CSS styles */
+            
+            /* i. Demonstrate different font styles */
+            h1 {
+                font-family: Arial, sans-serif;
+                font-size: 32px;
+                font-weight: bold;
+            }
+            
+    p {
+        font-family: Georgia, serif;
+        font-size: 18px;
+    }
+
+    /* ii. Control the repetition of image with background-repeat property */
+    .container {
+        background-image: url('https://images.unsplash.com/photo-1483791424735-e9ad0209eea2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+        background-repeat: repeat;
+        height: 100vh;
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: yellow;
+      font-weight: bold;
+
+    }
+
+    /* iii. Define style for links as a:link, a:active, a:hover, a:visited */
+    a:link {
+      color: blue;
+      text-decoration: none;
+      font-size: 48px;
+    }
+
+    a:visited {
+      color: orange;
+    }
+
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    
+    a:active {
+      color: green;
+    }
+
+    /* iv. Demonstrate Element visibility property */
+    .hide-element {
+      visibility: hidden;
+    }
+
+    .show-element {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML content -->
+
+  <!-- i. Demonstrate different font styles -->
+  <div class="container">
+      <p>This container has a background image.</p>
+  <h1>This is a Heading</h1>
+  <p>This is a paragraph with different font styles.</p>
+
+  <!-- ii. Control the repetition of image with background-repeat property -->
+    
+    <!-- iii. Define style for links as a:link, a:active, a:hover, a:visited -->
+    <p>
+        <a href="#">Link</a>
+  </p>
+
+  <!-- iv. Demonstrate Element visibility property -->
+  <div class="hide-element">
+      <p>This element is hidden.</p>
+  </div>
+
+  <div class="show-element">
+      <p>This element is visible.</p>
+    </div>
+</div>
+</body>
+</html>

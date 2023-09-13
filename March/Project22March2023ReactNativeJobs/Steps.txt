@@ -1,0 +1,35 @@
+1. npx create-expo-app@latest -e with-router ./
+2. create app folder, create two files _layout.js && index.js
+3. go to expo.github.io/router > then copy the _layout
+4. now write in new index.js ,import statements
+5. create a component Home
+6. add few dependencies 
+    npm install expo-fonts 
+                axios
+                react-native-dotenv
+7. Run the application - npm start
+8.on devloper mode, tap 5 times and get it , and then usb debugging on , connect both to same wifi network , using hotspot . 
+9. it will load in expo app .
+10. Here we have imported the few intial starting elements like style, assests , component<empty folder>, only to get the structure we would use. 
+11. in app/index.js - 
+    add useState, 
+    add Scroll View ,SafeAreaView <react native>
+    add Stack,useRouter  <expo router>
+    add color,icons etc from constants;
+    add Nearbyjobs, ...etc from components;
+12. PRESS ctrl + click on the variable/page. to go to it ;
+13. add router = useRouter() to HOME;
+14. replace view with SafeAreaView as it is better. 
+15. add style to safeArea View
+16. replace TEXT with Stack.screen it is self closing tag.
+17. stack would have options={{}} 
+18. it is having headerStyle , background color,headerShadowVisible;
+19. headerLeft, headerRight which has ScreeenHeaderBtn with url, dimensions.
+20. add headerTitle : ""  so "index" is removed
+21. add ScrollView, it has View (it has style too). it is currently not working
+22. add Welcome, PopularJobs, Nearbyjobs components to it. 
+23. now we edit the ScreenHeaderBtn 
+        View-> TouchableOpacity
+        Text -> Image etc. 
+24. add iconUrl,dimension,handlePress to parms. and source to <Image/>
+25. 

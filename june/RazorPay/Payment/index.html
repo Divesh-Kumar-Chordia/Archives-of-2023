@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Payment Interface</title>
+</head>
+<body>
+  <div id="homePage">
+    <div class="background-image">
+      <h1>Welcome to the Payment Interface</h1>
+      <div class="overlay">
+        <div id="loginForm">
+          <h2>Login</h2>
+          <div>
+
+              <input type="text" id="username" placeholder="Username">
+              <input type="password" id="password" placeholder="Password">
+            </div>
+          <button onclick="loginUser()">Login</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="registerForm">
+          <h2>Register</h2>
+          <div>
+
+              <input type="text" id="regUsername" placeholder="Username">
+              <input type="password" id="regPassword" placeholder="Password">
+              <input type="text" id="phoneNumber" placeholder="Phone Number">
+              <input type="text" id="accountNo" placeholder="Account No">
+            </div>
+          <button onclick="registerUser()">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="paymentPage">
+    <h1>Payment Interface</h1>
+    <button onclick="goBack()">Back</button>
+    <div id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search by username or phone number">
+      <button onclick="searchUser()">Search</button>
+    </div>
+    <div id="userTile"></div>
+    <div id="userDetails">
+      <h2>Account Details</h2>
+      <p>Account No: <span id="accountNo"></span></p>
+      <p>Username: <span id="username"></span></p>
+      <p>Account Balance: $<span id="userAccountBalance"></span></p>
+    </div>
+    <div id="paymentUI">
+      <h2>Make Payment</h2>
+      <div id="paymentDisplay">
+        <p id="display">0</p>
+      </div>
+      <div id="numberPad">
+  <div class="row">
+    <button  class="btn" onclick="appendNumber(1)">1</button>
+    <button class="btn"onclick="appendNumber(2)">2</button>
+    <button class="btn"onclick="appendNumber(3)">3</button>
+  </div>
+  <div class="row">
+    <button class="btn" onclick="appendNumber(4)">4</button>
+    <button class="btn" onclick="appendNumber(5)">5</button>
+    <button class="btn" onclick="appendNumber(6)">6</button>
+  </div>
+  <div class="row">
+    <button class="btn" onclick="appendNumber(7)">7</button>
+    <button class="btn" onclick="appendNumber(8)">8</button>
+    <button class="btn" onclick="appendNumber(9)">9</button>
+  </div>
+  <div class="row">
+    <button class="btn" onclick="clearDisplay() ">C</button>
+    <button class="btn" onclick="appendNumber(0)">0</button>
+    <button class="btn" >.</button>
+</div>
+<div class="row">
+
+    <button class="btn" onclick="makePayment()" id="payButton">Pay</button>
+</div>
+</div>
+
+      <p id="paymentStatus"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

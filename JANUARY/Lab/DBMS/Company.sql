@@ -1,0 +1,51 @@
+USE database Company;
+
+CREATE TABLE EMPLOYEE (
+SSN INT,
+Name VARCHAR(255),
+Address VARCHAR(255),
+Sex CHAR(1),
+Salary DECIMAL(10,2),
+SuperSSN INT,
+PRIMARY KEY (SSN,SuperSSN),
+FOREIGN KEY (SuperSSN) REFERENCES EMPLOYEE(SSN),
+
+);
+
+CREATE TABLE DEPARTMENT (
+DNo INT PRIMARY KEY,
+DName VARCHAR(255),
+MgrSSN INT,
+MgrStartDate DATE,
+FOREIGN KEY (MgrSSN) REFERENCES EMPLOYEE(SSN)
+);
+
+CREATE TABLE DLOCATION (
+DNo INT PRIMARY KEY,
+DLoc VARCHAR(255),
+FOREIGN KEY (DNo) REFERENCES DEPARTMENT(DNo)
+);
+
+CREATE TABLE PROJECT (
+PNo INT PRIMARY KEY,
+PName VARCHAR(255),
+PLocation VARCHAR(255),
+DNo INT,
+FOREIGN KEY (DNo) REFERENCES DEPARTMENT(DNo)
+);
+
+CREATE TABLE WORKS_ON (
+SSN INT,
+PNo INT,
+Hours DECIMAL(10,2),
+PRIMARY KEY (SSN, PNo),
+FOREIGN KEY (SSN) REFERENCES EMPLOYEE(SSN),
+FOREIGN KEY (PNo) REFERENCES PROJECT(PNo)
+);
+
+insert into EMPLOYEE VALUES(1,"Divesh","Mangalore","M",120000,1)
+                            (2,"Albert","Chicago","M",140000,2)
+                            (3,"Alex","New York","F",20000,3)
+                            (4,"Claura","Florida","F",23000,4 )
+                            (5,"Robert","London","M",240000,6 )
+                            (6,"Rose","Delhi","F",12400,7);

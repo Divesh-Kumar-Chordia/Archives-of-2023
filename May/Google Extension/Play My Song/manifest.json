@@ -1,0 +1,15 @@
+{
+    "name": "Play Song Extension",
+    "version": "1.0",
+    "description": "A simple extension that plays a song when clicked.",
+    "manifest_version": 2,
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["contentscript.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }

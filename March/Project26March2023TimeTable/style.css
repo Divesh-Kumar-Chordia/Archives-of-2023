@@ -1,0 +1,27 @@
+:root{
+
+    background-color:white;
+  
+}
+
+
+.table{
+    top:20vw;
+    font-size: bold;
+    color:black;
+    text-align: center;
+    padding:10px;
+    display: flex;
+    position: center;
+    left:50vw;
+
+}
+table,tr,th,td{
+    text-align: center;
+    border: black 1px solid;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}

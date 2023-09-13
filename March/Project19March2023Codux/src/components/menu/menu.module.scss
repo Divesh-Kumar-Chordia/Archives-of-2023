@@ -1,0 +1,38 @@
+.root {
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: #2e2e2e;
+  flex-direction: column;
+  color: #ffffff;
+}
+.logo {
+  color: #f50808;
+  height: 50px;
+}
+.logo {
+  color: #fdfdfd;
+  align-self: center;
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(35, 35, 35, 0.98);
+}
+.imglogo {
+  align-self: center;
+  overflow: hidden;
+  background-color: #000000;
+  color: #000000;
+  height: 70px;
+}
+.logotext {
+  align-self: stretch;
+  padding: 5px 3px;
+  display: flex;
+  align-items: center;
+  color: #e0e0e0;
+  font-weight: 700;
+  text-align: justify;
+  font-size: 20px;
+}

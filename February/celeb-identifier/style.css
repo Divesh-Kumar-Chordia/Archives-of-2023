@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  input[type="file"] {
+    display: block;
+    margin: auto;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  #result {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

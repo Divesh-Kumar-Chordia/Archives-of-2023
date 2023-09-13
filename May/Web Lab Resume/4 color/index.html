@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divided Frames</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .row {
+      display: flex;
+      height: 50%;
+    }
+    .column {
+      flex: 1;
+    }
+    #frame1 {
+      background-color: #ff0000; /* Red */
+    }
+    #frame2 {
+      background-color: #00ff00; /* Green */
+    }
+    #frame3 {
+      background-color: #0000ff; /* Blue */
+    }
+    #frame4 {
+      background-color: #ffff00; /* Yellow */
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column" id="frame1">
+      <!-- Content for frame 1 -->
+    </div>
+    <div class="column" id="frame2">
+      <!-- Content for frame 2 -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" id="frame3">
+      <!-- Content for frame 3 -->
+    </div>
+    <div class="column" id="frame4">
+      <!-- Content for frame 4 -->
+    </div>
+  </div>
+</body>
+</html>

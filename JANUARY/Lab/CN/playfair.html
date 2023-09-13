@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 5px;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      .cipher {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="input">
+    <input type="text" id="key">
+    <button id="encryptBtn">Encrypt</button>
+    <br>
+    <br>
+    <table id="grid">
+    </table>
+  </body>
+  <script>
+    const encryptBtn = document.getElementById("encryptBtn");
+    const input = document.getElementById("input");
+    const key = document.getElementById("key");
+    const grid = document.getElementById("grid");
+
+    encryptBtn.addEventListener("click", function() {
+      const plainText = input.value;
+      const cipherText = playfairCipher(plainText, key.value);
+      input.value = cipherText;
+      drawGrid(cipherText, key.value);
+    });
+
+    function playfairCipher(plainText, key) {
+      // your playfair cipher implementation here
+      // ...
+
+      return "cipher text";
+    }
+
+    function drawGrid(cipherText, key) {
+      // generating HTML for 5x5 grid
+      let gridHTML = "<tr>";
+      for (let i = 0; i < 25; i++) {
+        gridHTML += "<td></td>";
+        if ((i + 1) % 5 === 0) {
+          gridHTML += "</tr><tr>";
+        }
+      }
+      gridHTML += "</tr>";
+      grid.innerHTML = gridHTML;
+
+      // highlighting cells
+      const cells = grid.getElementsByTagName("td");
+      for (let i = 0; i < cipherText.length; i += 2) {
+        const char1 = cipherText[i];
+        const char2 = cipherText[i + 1];
+        // your code to highlight the characters' positions on the grid
+        // ...
+      }
+    }
+  </script>
+</html>

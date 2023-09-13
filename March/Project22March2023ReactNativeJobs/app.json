@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "Project22March2023ReactNativeJobs",
+    "slug": "Project22March2023ReactNativeJobs"
+  }
+}

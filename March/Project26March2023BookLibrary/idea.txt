@@ -1,0 +1,19 @@
+it is about books i have read and i want to read , i will read , it should have various collections, and also author wise. 
+
+
+main page 
+    header 
+        (color: )
+        Library     Search      Tags/collections        Author      Newest  <+>
+
+        which ever section selected 
+
+        books arranged 
+            it is having details like photo , author name, pages, topic/tags
+            on click it opens the pdf 
+
+        footer.
+        by Divesh . 
+
+
+

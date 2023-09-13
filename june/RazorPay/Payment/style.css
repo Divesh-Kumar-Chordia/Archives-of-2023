@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1, h2 {
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#loginForm, #registerForm {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+input{
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 15px 30px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#paymentPage {
+  display: none;
+}
+
+#searchBar {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+#userTile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.userTile {
+  padding: 15px;
+  margin: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.userTile:hover {
+  background-color: #ccc;
+}
+
+#userDetails {
+  display: none;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#paymentUI {
+  display: none;
+}
+
+#paymentDisplay {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#numberPad {
+  justify-items: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  font-size: 24px;
+  color:black;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d0d0d0;
+}
+
+.btn:active {
+  background-color: #b0b0b0;
+}
+
+#payButton {
+  grid-column: span 3;
+  width: 240px;
+  background-color: #4caf50;
+  color: white;
+}
+
+#payButton:hover {
+  background-color: #45a049;
+}
+
+#payButton:active {
+  background-color: #3e874a;
+}
+
+@keyframes buttonScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button:focus {
+  outline: none;
+  animation: buttonScale 0.5s ease;
+}
+
+.keypad-button {
+  padding: 15px 30px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.keypad-button:hover {
+  background-color: #45a049;
+}
+
+#paymentStatus {
+  color: red;
+}
+
+/* Additional Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
